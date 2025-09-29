@@ -13,6 +13,8 @@ Houdini Indie Limited-Commercial 21.0.440
 ## 用語説明
 公式と同じですが、簡単に図解します。
 
+[Curveノードの公式ドキュメント](https://www.sidefx.com/docs/houdini/nodes/sop/curve.html)
+
 <img src="images/term000.jpg" width="400">
 
 ## 使用方法
