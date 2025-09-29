@@ -32,9 +32,9 @@ Houdini Indie Limited-Commercial 21.0.440
 | 1 | Plane | どの平面(視点)で作業するかを設定します。<br>XY (Front)/YZ (Right)/ZX (Top) |
 | 2 | Edit Pt Num | 選択中の編集ポイント番号です。 |
 | 3 | Tan Handle Num | 選択中の接線ハンドル番号です。 |
-| 4 | Tan Hadle Angle | 接線ハンドルの角度を設定します。 |
-| 5 | Tan Handle Length | 接線ハンドルの長さを設定します。 |
-| 6 | Tan Handle Height | 接線ハンドルの高さを設定します。 |
+| 4 | Tan Hadle Angle | 接線ハンドルの角度を設定します。 <br><img src="images/gui001.jpg" width="200">|
+| 5 | Tan Handle Length | 接線ハンドルの長さを設定します。1で編集ポイント間の距離と同じ長さになるように、正規化されています。 |
+| 6 | Tan Handle Height | 接線ハンドルの高さを設定します。<br>ZX (Top)の例:<br><img src="images/gui002.jpg" width="200"> |
 | 7 | Set tan handle angles to 0 | 各接線ハンドルの角度を0に設定します。 |
 | 8 | Set tan handle lengths to 0.5 | 各接線ハンドルの長さを0.5(セグメントの中央)に設定します。 |
 | 9 | Set tan handle heights to 0 | 各接線ハンドルの高さを0に設定します。 |
