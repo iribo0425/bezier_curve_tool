@@ -4,7 +4,7 @@ Curveノードのベジェ曲線をGUIで制御するツールです。接線ハ
 Houdini Indie Limited-Commercial 21.0.440
 ## 導入方法
 本ツールはシェルフツールですので、使用前に登録をお願いします。
-- 必要であれば、新しいシェルフタブを作成します。+をクリックして、New Shelf Tab...をクリックします。![installation000](images/installation000.jpg)
+- 必要であれば、新しいシェルフタブを作成します。+をクリックして、New Shelf Tab...をクリックします。<br><img src="images/installation000.jpg" width="200">
 - 各項目を設定して、Acceptをクリックします。
 - 作成したシェルフタブを右クリックして、New Tool...をクリックします。
 - 各項目を設定します。
