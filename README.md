@@ -5,11 +5,11 @@ Houdini Indie Limited-Commercial 21.0.440
 ## 導入方法
 本ツールはシェルフツールですので、使用前に登録をお願いします。
 - 必要であれば、新しいシェルフタブを作成します。+をクリックして、New Shelf Tab...をクリックします。<br><img src="images/installation000.jpg" width="200">
-- 各項目を設定して、Acceptをクリックします。
-- 作成したシェルフタブを右クリックして、New Tool...をクリックします。
-- 各項目を設定します。
-- Scriptタブをクリックして、本リポジトリのscript.pyの内容をコピー&ペースト、Acceptをクリックします。
-- 作成したツールをクリックして、以下のようなウィンドウが表示されたら導入完了です。
+- 各項目を設定して、Acceptをクリックします。<br><img src="images/installation001.jpg" width="200">
+- 作成したシェルフタブを右クリックして、New Tool...をクリックします。<br><img src="images/installation002.jpg" width="200">
+- 各項目を設定します。<br><img src="images/installation003.jpg" width="200">
+- Scriptタブをクリックして、本リポジトリのscript.pyの内容をコピー&ペースト、Acceptをクリックします。<br><img src="images/installation004.jpg" width="200">
+- 作成したツールをクリックして、以下のようなウィンドウが表示されたら導入完了です。<br><img src="images/installation005.jpg" width="200">
 ## 用語説明
 公式と同じですが、簡単に図解します。
 ## 使用方法
