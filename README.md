@@ -1,5 +1,8 @@
 # [Houdini] Bezier Curve Tool
 Curveノードのベジェ曲線をGUIで制御するツールです。接線ハンドルの角度や長さを数値で指定したいと思い、作成しました。
+
+<img src="images/introduction.gif" width="600">
+
 ## 動作確認環境
 Houdini Indie Limited-Commercial 21.0.440
 ## 導入方法
@@ -15,7 +18,7 @@ Houdini Indie Limited-Commercial 21.0.440
 
 [Curveノードの公式ドキュメント](https://www.sidefx.com/docs/houdini/nodes/sop/curve.html)
 
-<img src="images/term000.jpg" width="400">
+<img src="images/term000.jpg" width="600">
 
 ## 使用方法
 - Curveノードの**Primitive TypeをBezier Curveに設定**して、曲線を作成しておきます。Curve tool自体の使い方に関しては、他の資料をご参照ください。<br><img src="images/usage000.jpg" width="200">
