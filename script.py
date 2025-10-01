@@ -259,9 +259,9 @@ def create_separator(parent=None):
 
     return separator
 
-def fixup_and_set_text(line_edit, text):
-    text_ = line_edit.validator().fixup(text)
-    line_edit.setText(text_)
+def set_float_to_line_edit(line_edit, f):
+    text = line_edit.validator().fixup(f"{f:f}")
+    line_edit.setText(text)
 
 class FloatSliderLineEditLinker(QtCore.QObject):
     on_val_changed = QtCore.Signal(float)
@@ -301,7 +301,7 @@ class FloatSliderLineEditLinker(QtCore.QObject):
         val = v * self.__get_val_multiplier()
         self.__slider.setValue(val)
 
-        fixup_and_set_text(self.__line_edit, str(v))
+        set_float_to_line_edit(self.__line_edit, v)
 
         self.on_val_changed.emit(self.val)
 
@@ -314,7 +314,7 @@ class FloatSliderLineEditLinker(QtCore.QObject):
         self.__b_is_setting_val = True
 
         val = value / self.__get_val_multiplier()
-        fixup_and_set_text(self.__line_edit, str(val))
+        set_float_to_line_edit(self.__line_edit, val)
 
         self.on_val_changed.emit(self.val)
 
@@ -345,7 +345,7 @@ class FloatSliderLineEditLinker(QtCore.QObject):
         self.__b_is_setting_val = True
 
         val = self.__slider.value() / self.__get_val_multiplier()
-        fixup_and_set_text(self.__line_edit, str(val))
+        set_float_to_line_edit(self.__line_edit, val)
 
         self.on_val_changed.emit(self.val)
 
@@ -461,7 +461,7 @@ class EditPtWidget(QtWidgets.QWidget):
         self.__label_tan_handle_num1.setText(str(edit_pt.tan_handle_num))
         self.__fslel_tan_handle_angle.val = edit_pt.tan_handle_angle
         self.__fslel_tan_handle_len.val = edit_pt.tan_handle_len
-        fixup_and_set_text(self.__line_edit_tan_handle_height, str(edit_pt.tan_handle_height))
+        set_float_to_line_edit(self.__line_edit_tan_handle_height, edit_pt.tan_handle_height)
 
     def __fslel_tan_handle_angle_on_val_changed(self, val):
         self.on_tan_handle_angle_changed.emit(val)
