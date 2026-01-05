@@ -791,13 +791,18 @@ class MainModel(QtCore.QObject):
         geo_selected = node_selected.geometry()
 
         for prim in geo_selected.prims():
-            segment_count = (len(prim.vertices()) - 1) // 3
+            segment_count = 0
+
+            if prim.isClosed():
+                segment_count = len(prim.vertices()) // 3
+            else:
+                segment_count = (len(prim.vertices()) - 1) // 3
 
             for segment_num in range(segment_count):
-                edit_pt_num0 = prim.vertices()[segment_num * 3 + 0].point().number()
-                tan_handle_num0 = prim.vertices()[segment_num * 3 + 1].point().number()
-                edit_pt_num1 = prim.vertices()[segment_num * 3 + 3].point().number()
-                tan_handle_num1 = prim.vertices()[segment_num * 3 + 2].point().number()
+                edit_pt_num0 = prim.vertices()[(segment_num * 3 + 0) % len(prim.vertices())].point().number()
+                tan_handle_num0 = prim.vertices()[(segment_num * 3 + 1) % len(prim.vertices())].point().number()
+                edit_pt_num1 = prim.vertices()[(segment_num * 3 + 3) % len(prim.vertices())].point().number()
+                tan_handle_num1 = prim.vertices()[(segment_num * 3 + 2) % len(prim.vertices())].point().number()
 
                 min_edit_pt_num = min(edit_pt_num0, edit_pt_num1)
                 max_edit_pt_num = max(edit_pt_num0, edit_pt_num1)
